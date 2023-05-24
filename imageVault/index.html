@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ImageVault</title>
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- box icon css -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- font awesome css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <!-- link tailwind css -->
+        <link rel="stylesheet" href="./dist/output.css" />
+    </head>
+    <body class="bg-slate-700">
+        <!-- top navbar start -->
+        <div class="bg-slate-900 flex px-8 pt-6 pb-1 fixed w-full z-20">
+            <!-- logo here -->
+            <a href="" class="logo basis-2/12 pt-2">
+                <img
+                    src="./assets/image_vault-pic.png"
+                    alt="logo"
+                    class="w-48"
+                />
+            </a>
+            <!-- search and menu -->
+            <div class="others flex justify-between basis-10/12">
+                <!-- search option -->
+                <div class="">
+                    <form class="search bg-slate-800 flex px-6 py-3 rounded-md">
+                        <div class="left">
+                            <i
+                                class="fa-solid fa-magnifying-glass text-gray-400 pr-2"
+                            ></i>
+                            <input
+                                type="text"
+                                class="focus:border-none focus:outline-none text-white bg-transparent w-80"
+                                placeholder="Search files..."
+                            />
+                            <!-- reset option -->
+                            <button
+                                class="fa-solid fa-xmark px-6 border-r-2 border-slate-600 text-gray-400"
+                                type="reset"
+                            ></button>
+                        </div>
+                        <a href="#" class="dropdown text-gray-400 pl-4">
+                            <span class="pr-6">45101 File(s)</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </form>
+                    <div class="option text-gray-500 text-sm py-1">
+                        <span class="pr-3">
+                            Size
+                            <i class="fa-solid fa-angle-right pl-1 text-xs"></i>
+                        </span>
+                        <span class="pr-3">
+                            Orientation
+                            <i class="fa-solid fa-angle-right pl-1 text-xs"></i>
+                        </span>
+                        <span class="pr-3">
+                            Metadata
+                            <i class="fa-solid fa-angle-right pl-1 text-xs"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- top right menu -->
+                <div class="pt-3">
+                    <ul class="flex gap-8">
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-gear pr-2"></i>
+                                <span class="">Advanced Setting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-circle-user pr-1"></i>
+                                <span class="">Jhon Doe</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- top navbar end -->
+
+        <!-- left sizebar start -->
+        <div class="w-2/12 h-screen fixed bg-slate-800 z-0">
+            <div class="left-sidebar-top"></div>
+        </div>
+        <!-- left sizebar end -->
+
+        <!-- main sizebar start -->
+        <div
+            class="w-8/12 h-screen fixed bg-slate-700 z-0 left-[50%] -translate-x-[50%]"
+        ></div>
+        <!-- main sizebar end -->
+
+        <!-- right sizebar start -->
+        <div class="w-2/12 h-screen fixed bg-slate-800 z-0 right-0"></div>
+        <!-- right sizebar end -->
+    </body>
+</html>
