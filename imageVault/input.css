@@ -12,4 +12,28 @@
     .nav-link {
         @apply text-gray-400 hover:text-white transition-all duration-300 ease-out;
     }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #0f172a;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #fff5;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+    }
 }
