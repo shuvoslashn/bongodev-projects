@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ImageVault</title>
+        <title>MediaVolt</title>
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,13 +27,21 @@
     </head>
     <body class="bg-slate-700">
         <!-- top navbar start -->
-        <div class="fixed z-20 flex w-full bg-slate-900 px-4 pb-1 pt-3">
+        <div
+            class="fixed z-20 flex w-full bg-slate-900 px-4 xl:pb-1 xl:pt-3 py-3 justify-between xl:justify-start items-center xl:items-start"
+        >
             <!-- logo here -->
             <a href="" class="logo basis-2/12 pt-2">
-                <img src="./assets/logo.png" alt="logo" class="w-48" />
+                <img
+                    src="./assets/logo.png"
+                    alt="logo"
+                    class="w-full xl:w-48 flex-shrink-0"
+                />
             </a>
             <!-- search and menu -->
-            <div class="others flex basis-10/12 justify-between pl-12">
+            <div
+                class="others hidden xl:flex basis-10/12 justify-between pl-12"
+            >
                 <!-- search option -->
                 <div class="">
                     <form class="search flex rounded-md bg-slate-800 px-6 py-2">
@@ -90,12 +98,17 @@
                     </ul>
                 </div>
             </div>
+            <div class="block xl:hidden">
+                <i class="fa-solid fa-bars-staggered nav-link text-xl"></i>
+            </div>
         </div>
         <!-- top navbar end -->
 
-        <div class="flex">
+        <div class="flex flex-col lg:flex-row">
             <!-- left sizebar start -->
-            <div class="h-screen basis-1/6 bg-slate-800 pt-[83px]">
+            <div
+                class="h-screen basis-1/6 bg-slate-800 pt-[83px] hidden lg:block"
+            >
                 <!-- left sidebar top area -->
                 <div class="px-4">
                     <input type="file" class="w-10 cursor-pointer opacity-0" />
@@ -195,11 +208,15 @@
             <!-- left sizebar end -->
 
             <!-- main start -->
-            <div class="relative h-screen basis-4/6 bg-slate-700 pt-[83px]">
+            <div
+                class="relative h-screen basis-4/6 bg-slate-700 pt-[83px] pb-2"
+            >
                 <!-- main top bar start -->
-                <div class="absolute flex w-full justify-between px-4 py-2">
+                <div
+                    class="top-14 lg:top-[83px] fixed lg:absolute flex w-full justify-between px-4 py-2 bg-slate-950 z-40"
+                >
                     <!-- main top left -->
-                    <div class="flex gap-4 text-sm">
+                    <div class="hidden xl:flex gap-4 text-sm">
                         <a href="#" class="nav-link flex items-center gap-2">
                             <i class="fa-solid fa-upload"></i>
                             <span>Publish</span>
@@ -239,120 +256,471 @@
                     </div>
                 </div>
                 <!-- main top bar end -->
-                <div class="h-full w-full overflow-y-scroll">
-                    <div>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
+                <div
+                    class="h-full w-full overflow-y-scroll flex gap-2 px-2 py-12"
+                >
+                    <!-- image gallery start -->
+                    <div class="flex flex-col gap-2 pb-10">
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/11.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/12.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/8.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/4.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/5.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/6.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/7.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/10.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/9.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/1.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/3.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/5.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 pb-10">
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/6.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/4.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/8.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/1.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/2.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/5.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/9.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/3.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/10.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/11.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/12.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/13.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 pb-10">
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/1.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/12.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/2.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/3.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/13.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/4.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/5.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/6.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/11.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/7.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/8.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/9.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/10.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 pb-10">
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/10.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/9.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/11.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/1.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/7.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/8.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/12.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/13.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/5.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/6.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/2.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/3.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/4.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 pb-10">
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/13.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/1.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/2.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/3.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/4.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/5.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/6.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/7.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/8.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/9.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/10.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/11.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
+                        <div class="rounded-md overflow-hidden flex-shrink-0">
+                            <img
+                                src="./assets/12.jpeg"
+                                alt=""
+                                class="inner-img"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- main end -->
 
             <!-- right sizebar start -->
-            <div class="h-screen basis-1/6 bg-slate-800 pt-[83px]">
+            <div
+                class="h-screen basis-1/6 bg-slate-800 pt-[83px] hidden lg:block"
+            >
                 <!-- right top start -->
-                <div class="px-4 py-1 text-right">
+                <div class="px-4 py-2 text-right">
                     <a href="#" class="nav-link">
                         <i class="fa-solid fa-xmark"></i>
                         <span>Close</span>
@@ -499,7 +867,7 @@
                 </div>
                 <!-- right information end -->
 
-                <div class="text-center text-gray-400 pt-4">
+                <div class="text-center text-gray-400 pt-8">
                     <p class="font-semibold">Published On</p>
                     <a href="#" class="nav-link text-sm"
                         >View Published
