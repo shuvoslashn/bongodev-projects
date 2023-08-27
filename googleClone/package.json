@@ -1,0 +1,16 @@
+{
+    "devDependencies": {
+        "tailwindcss": "^3.3.3"
+    },
+    "name": "googleclone",
+    "version": "1.0.0",
+    "main": "tailwind.config.js",
+    "dependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tailwind": "npx tailwindcss -i ./src/css/input.css -o ./dist/style.css --watch"
+    },
+    "author": "Shuvo Sarker",
+    "license": "ISC",
+    "description": "Google Clone"
+}
