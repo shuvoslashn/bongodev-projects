@@ -1,2 +1,2 @@
 # MediaVolt - file manager
-visit: <a href="shuvo-mediavolt.surge.sh">MediaVolt</a>
+visit: <a target="_blank" href="http://shuvo-mediavolt.surge.sh">MediaVolt</a>
